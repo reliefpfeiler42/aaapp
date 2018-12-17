@@ -6,7 +6,7 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     public GameObject PrefabToInstantiate;
-    private const float objectTransformation = 0.075f;
+    private const float objectTransformation = 0.0f;
     private const float objectRotation = 180.0f;
 
     // Use this for initialization
