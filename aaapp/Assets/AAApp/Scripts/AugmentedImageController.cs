@@ -6,14 +6,13 @@ using UnityEngine;
 
 public class AugmentedImageController : MonoBehaviour
 {
-
-	public GameObject PrefabToInstantiate;
+	public GameObject PrefabDino;
     private readonly List<AugmentedImage> _images = new List<AugmentedImage>();
-	private bool _exist;
+	private bool _dinoIsActive;
 
     void Start()
     {
-		_exist = false;
+		_dinoIsActive = false;
     }
 
     void Update()
@@ -24,19 +23,19 @@ public class AugmentedImageController : MonoBehaviour
 		}
 
 		Session.GetTrackables(_images, TrackableQueryFilter.Updated);
-		VisualizeTrackables();
+		VisualizeGameObject();
     }
 
-	private void VisualizeTrackables()
+	private void VisualizeGameObject()
 	{
 		foreach (var image in _images)
 		{
-			if (image.DatabaseIndex == 0 && _exist == false)
+			if (image.DatabaseIndex == 0 && _dinoIsActive == false)
 			{
 				Anchor anchor = image.CreateAnchor(image.CenterPose);
-				var myGameObject = Instantiate(PrefabToInstantiate, anchor.transform);
-				_exist = true;
-				myGameObject.transform.localScale = new Vector3(image.ExtentX, image.ExtentX, image.ExtentX);
+				var dino = Instantiate(PrefabDino, anchor.transform);
+				_dinoIsActive = true;
+				dino.transform.localScale = new Vector3(image.ExtentX, image.ExtentX, image.ExtentX);
 			}
 		}
 	}
