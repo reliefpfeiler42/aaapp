@@ -157,6 +157,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabDino: {fileID: 3593560510790531274, guid: ce8049ba50853894e8bcbc16deedef5f,
     type: 3}
+  PrefabDrone: {fileID: 8628784948738190526, guid: 16d0bc42dc6206d429c60b70c25fe1d6,
+    type: 3}
+  Camera: {fileID: 822907680}
 --- !u!1001 &822907679
 PrefabInstance:
   m_ObjectHideFlags: 0
