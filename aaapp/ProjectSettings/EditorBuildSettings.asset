@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/AAApp/Scenes/Drone&Dino.unity
     guid: 1926eb17e28a337488125a4b04fb1199
-  - enabled: 0
-    path: Assets/AAApp/Scenes/SoundCheck.unity
-    guid: e429f7dc2c79b2e4fb3093cdd2d27d60
+  - enabled: 1
+    path: Assets/AAApp/Scenes/UserTest.unity
+    guid: 9979917af7c59eb4eb3535060186aef1
   m_configObjects: {}
