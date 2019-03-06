@@ -371,6 +371,7 @@ ModelImporter:
     7400002: Threaten
     7400004: back
     7400006: idle
+    7400008: idle (1)
     9500000: //RootNode
     13700000: Head_Part1
     13700002: Head_Part2
@@ -514,7 +515,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
