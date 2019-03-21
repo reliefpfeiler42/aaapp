@@ -14,6 +14,7 @@ public class PlayController : MonoBehaviour
 
     private const float objectTransformation = 0.0f;
     private const float objectRotation = 270.0f;
+    private Vector3 objectScale = new Vector3(0.2f, 0.2f, 0.2f);
     // private List<DetectedPlane> m_AllPlanes = new List<DetectedPlane>();
 
     // Start is called before the first frame update
@@ -42,6 +43,7 @@ public class PlayController : MonoBehaviour
         {
             // Instantiate at hit pose.
             var myObject = Instantiate(DinoPrefab, hit.Pose.position, hit.Pose.rotation);
+            myObject.transform.localScale = objectScale;
             // Compensate for hitpose rotation.
             myObject.transform.Rotate(0, objectRotation, 0, Space.Self);
             // Compensate fpr hitpose tansformation.

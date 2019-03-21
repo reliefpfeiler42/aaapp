@@ -841,7 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f73fbb307224f204daa308048960c317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DinoPrefab: {fileID: 3593560510790531274, guid: ce8049ba50853894e8bcbc16deedef5f,
+  DinoPrefab: {fileID: 3298595385025716735, guid: 0d4d0e3993664e940b14c62da139b99c,
     type: 3}
   DetectedPlanePrefab: {fileID: 1654175882956584, guid: 8c82fc89544d9bb459ce34102a086e99,
     type: 3}
