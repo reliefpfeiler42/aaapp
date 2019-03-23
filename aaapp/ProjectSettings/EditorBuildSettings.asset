@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/AAApp/Scenes/UserTest.unity
     guid: 9979917af7c59eb4eb3535060186aef1
   - enabled: 1
+    path: Assets/AAApp/Scenes/UserTestStereo.unity
+    guid: 07042035d603c6740b66f5bce1b9bbbb
+  - enabled: 1
     path: Assets/AAApp/Scenes/Play.unity
     guid: 0b6adafb04426474ba62f3dee88d5102
   - enabled: 0

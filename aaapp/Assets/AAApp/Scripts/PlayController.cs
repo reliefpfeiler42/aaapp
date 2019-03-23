@@ -14,21 +14,18 @@ public class PlayController : MonoBehaviour
 
     private const float objectTransformation = 0.0f;
     private const float objectRotation = 270.0f;
-    private Vector3 objectScale = new Vector3(0.2f, 0.2f, 0.2f);
-    // private List<DetectedPlane> m_AllPlanes = new List<DetectedPlane>();
+    private Vector3 objectScale;
 
     // Start is called before the first frame update
     void Start()
     {
         LoadMenuButton.onClick.AddListener(LoadMenu);
+        objectScale = new Vector3(0.2f, 0.2f, 0.2f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        // Session.GetTrackables<DetectedPlane>(m_AllPlanes);
-
         // If the player has not touched the screen, we are done with this update.
         Touch touch;
         if (Input.touchCount < 1 || (touch = Input.GetTouch(0)).phase != TouchPhase.Began)
