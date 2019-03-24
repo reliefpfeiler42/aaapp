@@ -34,7 +34,8 @@ namespace UserTest
         private Vector3 _right;
         private Vector3 _back;
         private Vector3 _up;
-        private Vector3 _down;
+        private Vector3 _front;
+        // private Vector3 _down;
         private Vector3 _frontLeft;
         private Vector3 _frontRight;
         private Vector3 _backLeft;
@@ -53,7 +54,8 @@ namespace UserTest
             _right = new Vector3(3, 0, 0);
             _back = new Vector3(0, 0, -4);
             _up = new Vector3(0, 3, 0);
-            _down = new Vector3(0, -3, 0);
+            // _down = new Vector3(0, -3, 0);
+            _front = new Vector3(0, 0, 3);
             _frontLeft = new Vector3(-3, 0, 3);
             _frontRight = new Vector3(3, 0, 3);
             _backLeft = new Vector3(-3, 0, -4);
@@ -103,7 +105,7 @@ namespace UserTest
                             _timeCounter = 3;
                             break;
                         case 4:
-                            InstantiateWithOffset(image, _down);
+                            InstantiateWithOffset(image, _front);
                             _timeCounter = 4;
                             break;
                         case 5:
@@ -155,8 +157,8 @@ namespace UserTest
                 _ballIsActive = false;
                 stopWatch.Stop();
                 TimeSpan ts = stopWatch.Elapsed;
-                string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:000}",
-                    ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds);
+                string elapsedTime = String.Format("{0:00}:{1:00}:{2:000}",
+                    ts.Minutes, ts.Seconds, ts.Milliseconds);
 
                 InsertTimeValue(elapsedTime, _timeCounter);
             }

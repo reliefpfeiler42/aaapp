@@ -851,7 +851,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1374819067816658964}
   - component: {fileID: 4740035020424682917}
-  - component: {fileID: 175030879301121053}
   m_Layer: 0
   m_Name: SoundBackground
   m_TagString: Untagged
@@ -882,15 +881,14 @@ AudioSource:
   m_GameObject: {fileID: 1787881177513172200}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 06ae191ed662c96468e152e6bbdb6902,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3e0ec46be3278d247b172d3c81b8a73f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
-  Spatialize: 1
+  Spatialize: 0
   SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
@@ -930,7 +928,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -970,29 +968,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &175030879301121053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1787881177513172200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
-  listenerDirectivityAlpha: 0
-  listenerDirectivitySharpness: 1
-  gainDb: 0
-  nearFieldEffectEnabled: 0
-  nearFieldEffectGain: 1
-  occlusionEnabled: 1
-  occlusionIntensity: 1
-  quality: 2
 --- !u!1 &1828963145356811306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +978,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5280497416974767379}
   - component: {fileID: 2720365195637661312}
-  - component: {fileID: 6003787870386769598}
   m_Layer: 0
   m_Name: SoundTurbineR
   m_TagString: Untagged
@@ -1034,15 +1008,14 @@ AudioSource:
   m_GameObject: {fileID: 1828963145356811306}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 06ae191ed662c96468e152e6bbdb6902,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 252e676f3e142974b92027d44b78ab1a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
-  Spatialize: 1
+  Spatialize: 0
   SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
@@ -1082,7 +1055,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1122,29 +1095,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6003787870386769598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828963145356811306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
-  listenerDirectivityAlpha: 0
-  listenerDirectivitySharpness: 1
-  gainDb: 0
-  nearFieldEffectEnabled: 0
-  nearFieldEffectGain: 1
-  occlusionEnabled: 1
-  occlusionIntensity: 1
-  quality: 2
 --- !u!1 &2060918156395805482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,7 +1531,6 @@ GameObject:
   m_Component:
   - component: {fileID: 404014706251380611}
   - component: {fileID: 3114534867910067879}
-  - component: {fileID: 3673592108918362832}
   m_Layer: 0
   m_Name: SoundDroidMain
   m_TagString: Untagged
@@ -1612,15 +1561,14 @@ AudioSource:
   m_GameObject: {fileID: 2430025782197042445}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 06ae191ed662c96468e152e6bbdb6902,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e49d7c4151f033c40aea8455cc8f2af3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
-  Spatialize: 1
+  Spatialize: 0
   SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
@@ -1660,7 +1608,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1700,29 +1648,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &3673592108918362832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2430025782197042445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bypassRoomEffects: 0
-  directivityAlpha: 0.5
-  directivitySharpness: 1
-  listenerDirectivityAlpha: 0
-  listenerDirectivitySharpness: 1
-  gainDb: 0
-  nearFieldEffectEnabled: 0
-  nearFieldEffectGain: 1
-  occlusionEnabled: 1
-  occlusionIntensity: 1
-  quality: 2
 --- !u!1 &2837366137742392448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3659,7 +3584,7 @@ GameObject:
   - component: {fileID: 8640979385420222296}
   - component: {fileID: 1159518667639344565}
   m_Layer: 0
-  m_Name: BusterDroneSounded2
+  m_Name: BusterDroneSoundedStereo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3772,7 +3697,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7390435193755461498}
   - component: {fileID: 1025593511720236082}
-  - component: {fileID: 972898506238046210}
   m_Layer: 0
   m_Name: SoundTurbineL
   m_TagString: Untagged
@@ -3803,15 +3727,14 @@ AudioSource:
   m_GameObject: {fileID: 9081001108404105516}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 06ae191ed662c96468e152e6bbdb6902,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 252e676f3e142974b92027d44b78ab1a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
-  Spatialize: 1
+  Spatialize: 0
   SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
@@ -3851,7 +3774,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3891,26 +3814,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &972898506238046210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9081001108404105516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
-  listenerDirectivityAlpha: 0
-  listenerDirectivitySharpness: 1
-  gainDb: 0
-  nearFieldEffectEnabled: 0
-  nearFieldEffectGain: 1
-  occlusionEnabled: 1
-  occlusionIntensity: 1
-  quality: 2
