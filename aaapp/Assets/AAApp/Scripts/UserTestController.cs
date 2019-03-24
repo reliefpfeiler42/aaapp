@@ -67,6 +67,8 @@ namespace UserTest
         {
             if (Session.Status != SessionStatus.Tracking)
             {
+                GameObject.Destroy(_ball);
+                GameObject.Destroy(_anchor);
                 _ballIsActive = false;
                 return;
             }
