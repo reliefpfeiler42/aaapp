@@ -138,14 +138,17 @@ namespace UserTest
         }
 
         private void InstantiateWithOffset(AugmentedImage image, Vector3 offset)
-        {
-            _anchor = image.CreateAnchor(image.CenterPose);
-            _ball = Instantiate(BallPrefab, _anchor.transform);
-            _ballIsActive = true;
-            _ball.transform.position = _ball.transform.position + offset;
-            _ball.transform.localScale = _ballScale;
-            stopWatch.Reset();
-            stopWatch.Start();
+        {         
+            if (image.TrackingState == TrackingState.Tracking)
+            {
+                _anchor = image.CreateAnchor(image.CenterPose);
+                _ball = Instantiate(BallPrefab, _anchor.transform);
+                _ballIsActive = true;
+                _ball.transform.position = _ball.transform.position + offset;
+                _ball.transform.localScale = _ballScale;
+                stopWatch.Reset();
+                stopWatch.Start();
+            }
         }
 
         private void Raycaster(Vector3 origin, Vector3 direction)
